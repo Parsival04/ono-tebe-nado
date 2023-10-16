@@ -30,7 +30,7 @@ body {
 }
 
 .header {
-    padding: 92px 50px; 
+    padding: 92px 50px 99px; 
 }
 
 .content{
@@ -42,23 +42,32 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 92px auto 91px;
 }
 
 .header__links-list{
     display: flex;
-    gap: 32px;
+    gap: 33px;
     list-style: circle;
-    color: #000;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: normal;
-    
+    text-underline-offset: 5px;
 }
 
-.header__link-top:hover{
+.header__link{
+    color: #000;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header__link-top{
     text-decoration: none;
     color: #000;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .header__link:hover{
@@ -87,25 +96,30 @@ body {
 }
 
 .address {
-    align-self: flex-end;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     width: auto;
     height: 97px;
     color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+    font-style: normal;
+}
+
+.nomer {
+    color: #000;
+    text-underline-offset: 5px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 24.3px;
 }
 
-.nomer {
-    color: #000;
-}
-
 .cover {
     width: auto;
-    height: 757px;
+    min-height: 757px;
     background: url(../image/lotus_flower.png) no-repeat center;
     background-size: cover;
     position: relative;
@@ -129,7 +143,6 @@ body {
 .cover__title{
     display: flex;
     flex-wrap: wrap;
-    width: auto;
     padding-top: 165px;
     color: #FFF;
     font-size: 100px;
@@ -141,18 +154,26 @@ body {
 }
 
 .aligned-text{
+    display: block;
     width: 1340px;
+    max-height: 115px;
 }
 
 .aligned-text_center{
+    display: block;
     width: 1340px;
     text-align: center;
+    max-height: 115px;
+    padding-top: 13px;
 }
 
 .aligned-text_right{
+    display: block;
     width: 1340px;
     text-align: end;
     letter-spacing: 60px;
+    max-height: 115px;
+    padding-top: 17px;
 }
 
 .align span{
@@ -169,7 +190,7 @@ body {
 
 .cover__description{
     position: absolute;
-    margin: 667px 50px auto 372px;
+    margin: 657px auto auto 372px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -186,6 +207,7 @@ body {
     line-height: 28px;
     text-transform: uppercase;
     word-spacing: 16px;
+    word-spacing: 18px;
 }
 
 .bet-button{
@@ -200,10 +222,6 @@ body {
     border: 1px solid #FFF;
 }
 
-.lots{
-
-}
-
 .content_lots{
     margin-top: 180px;
     display: flex;
@@ -216,17 +234,13 @@ body {
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
-    padding-left: 50px;
+    padding-left: 40px;
 }
 
 .lots__card-list{
     display: flex;
     list-style-type: none;
-    gap: 22px;
-}
-
-.lots__card-list-item{
-
+    gap: 25px;
 }
 
 .card{
@@ -268,6 +282,7 @@ body {
     text-decoration-line: underline;
     text-transform: uppercase;
     z-index: 2;
+    text-decoration-skip-ink: none;
 }
 
 .card__text{
@@ -281,6 +296,7 @@ body {
 
 .lots__look-more-link{
     padding-left: 40px;
+    padding-top: 4px;
 }
 
 .about{
@@ -332,10 +348,6 @@ body {
     text-transform: uppercase;
 }
 
-.about__text{
-
-}
-
 .footer{
     margin-top: 180px;
     padding-bottom: 96px;
@@ -357,4 +369,5 @@ body {
     text-align: center;
     font-size: 18px;
     font-weight: 400;
+    text-underline-offset: 5px;
 }
